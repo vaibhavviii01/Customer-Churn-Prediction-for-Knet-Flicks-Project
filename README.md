@@ -1,37 +1,44 @@
-#Customer Lifetime Value (CLV) Analysis - Data Science for Product Managers
+Customer Churn Prediction and Clustering - Knet-Flicks | Data Science for Product Managers
 
-This project estimates Customer Lifetime Value (CLV) using Python by analyzing transaction data. It involves data cleaning, EDA cohort-based CLV calculation, and regression modeling to identify sales drivers. The insights help optimize marketing spend, improve retention strategies, &amp; enhance profitability through data-driven decisions. 
+This project focuses on analyzing customer churn for Knet-Flicks, a video streaming and internet service provider. The dataset includes customer account details, service subscriptions, and past interactions. The goal is to explore customer segmentation, identify key factors driving churn, and build predictive models to assess churn risk.
 
 📌 Project Overview
-Customer Lifetime Value (CLV) is a crucial metric in marketing that estimates the total revenue a business can expect from a single customer over their lifetime. In this project, I performed the following tasks:
+Through exploratory data analysis (EDA), clustering, and supervised learning techniques, we gain insights into customer behavior and suggest strategies to reduce churn. Understanding churn drivers helps Knet-Flicks retain valuable customers and optimize their marketing strategies.
 
---> Data Understanding & Cleaning
+📌Technologies Used
 
-Loaded and explored the dataset (customer_sales.csv).
-Identified missing values, outliers, and anomalies.
-Generated key statistics and visualizations.
+ - Python
+ - Jupyter Notebook
+ – Data processing and analysis: Pandas, NumPy
+ – Data visualization: Matplotlib, Seaborn
+ – Machine learning models (clustering, classification): Scikit-learn
+ – Supervised learning models: XGBoost / Random Forest / Logistic Regression 
+ – Unsupervised learning for customer segmentation: K-Means / Hierarchical Clustering 
+ 
+📌Project Insights
 
---> Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA):
 
-Detected outliers and anomalies using statistical methods and visualizations.
-Examined the effect of discounts on sales and profit.
-Identified key factors influencing sales using regression analysis.
+- Handled missing values and outliers.
+- Feature engineering, including encoding categorical variables and normalizing numeric values.
+- Visualized customer demographics and usage patterns.
 
---> CLV Calculation
+📌Customer Segmentation (Clustering):
 
-Assigned customers to acquisition cohorts based on their first purchase date.
-Calculated cumulative transaction amounts for each cohort.
-Computed the number of new customers acquired each year.
-Estimated Historic CLV for different cohorts.
-Created visualizations to interpret CLV trends.
+- Applied K-Means clustering to segment customers based on account and service attributes.
+- Identified distinct groups with varying churn risks and service preferences.
+- Determined optimal clusters using the elbow method and silhouette score.
 
---> Business Insights & Interpretation
+📌Churn Prediction (Supervised Learning):
 
-Analyzed spending patterns of different customer groups.
-Derived actionable insights for customer retention and acquisition strategies.
+- Built two predictive models using different supervised learning techniques.
+- Identified the top 5 features influencing churn.
+- Compared model performance using accuracy, precision, recall, and F1-score.
+  
+📌Key Findings:
 
-🔧 Tech Stack
-Python
-Pandas, NumPy (Data Manipulation)
-Matplotlib, Seaborn (Data Visualization)
-Scikit-learn (Regression Analysis)
+Customers on month-to-month contracts are more likely to churn.
+Lack of additional services (security, backups) correlates with higher churn rates.
+High churn risk segments have lower tenure and higher extra data charges.
+Recommendations include loyalty discounts, improved customer support, and personalized retention offers.
+
